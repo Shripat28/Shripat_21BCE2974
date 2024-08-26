@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chrono Clash Lobby</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="lobby-container">
+      <h1>Welcome to Chrono Clash</h1>
+      <div class="lobby-actions">
+        <button id="createGame">Create New Game</button>
+        <input type="text" id="gameCodeInput" placeholder="Enter Game Code" />
+        <button id="joinGame">Join Game</button>
+      </div>
+      <div id="error" class="hidden"></div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="lobby.js"></script>
+  </body>
+</html>
